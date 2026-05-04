@@ -6,7 +6,7 @@ import Link from "next/link"
 import { useRef, useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Phone, MessageCircle, Mail, Share2, Video, Headphones } from "lucide-react"
+import { ArrowRight, Phone, MessageCircle, Mail, Share2, Video, Headphones, type LucideIcon } from "lucide-react"
 
 /* Channel node floating in the hero */
 function ChannelNode({
@@ -19,7 +19,7 @@ function ChannelNode({
 }: {
   x: number
   y: number
-  icon: React.ComponentType<{ className?: string }>
+  icon: LucideIcon
   label: string
   delay?: number
   color: string

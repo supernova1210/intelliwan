@@ -6,7 +6,7 @@ import Link from "next/link"
 import { useRef, useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Building2, Star, GraduationCap, Users, BookOpen } from "lucide-react"
+import { ArrowRight, Building2, Star, GraduationCap, Users, BookOpen, type LucideIcon } from "lucide-react"
 
 function FloatingIcon({
   x,
@@ -17,7 +17,7 @@ function FloatingIcon({
 }: {
   x: number
   y: number
-  icon: React.ComponentType<{ className?: string; strokeWidth?: number }>
+  icon: LucideIcon
   delay?: number
   color?: string
 }) {

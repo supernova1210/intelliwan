@@ -351,4 +351,25 @@
       stroke-dashoffset: -100;
     }
   }
+
+  /* Marquee animations used in ClientsSection */
+  @keyframes marquee-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-25%); }
+  }
+
+  @keyframes marquee-right {
+    0% { transform: translateX(-25%); }
+    100% { transform: translateX(0); }
+  }
+
+  /* Orbit animation used in UnifiedCommunicationsSection */
+  @keyframes orbit {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(150px) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(150px) rotate(-360deg);
+    }
+  }
 }

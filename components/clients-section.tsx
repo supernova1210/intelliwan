@@ -126,17 +126,6 @@ export function ClientsSection() {
         <MarqueeRow logos={row2} direction="right" speed={40} />
       </div>
 
-      {/* Marquee keyframes */}
-      <style jsx>{`
-        @keyframes marquee-left {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-25%); }
-        }
-        @keyframes marquee-right {
-          0% { transform: translateX(-25%); }
-          100% { transform: translateX(0); }
-        }
-      `}</style>
     </section>
   )
 }

@@ -141,16 +141,6 @@ export function UnifiedCommunicationsSection() {
                   }}
                 />
               ))}
-              <style jsx>{`
-                @keyframes orbit {
-                  from {
-                    transform: translate(-50%, -50%) rotate(0deg) translateX(150px) rotate(0deg);
-                  }
-                  to {
-                    transform: translate(-50%, -50%) rotate(360deg) translateX(150px) rotate(-360deg);
-                  }
-                }
-              `}</style>
             </div>
           </div>
         </div>
