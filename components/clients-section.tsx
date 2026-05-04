@@ -1,6 +1,6 @@
 "use client"
 
-import { motion, useScroll, useTransform } from "framer-motion"
+import { motion, useScroll, useTransform, type MotionValue } from "framer-motion"
 import { useRef } from "react"
 
 const clientLogos = [
@@ -148,7 +148,7 @@ function WordReveal({
   end,
 }: {
   children: string
-  progress: ReturnType<typeof useTransform<number>>
+  progress: MotionValue<number>
   start: number
   end: number
 }) {
