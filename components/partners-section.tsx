@@ -4,12 +4,12 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 
 const partners = [
-  { name: "Mitel", logo: "/images/partners/mitel.png" },
-  { name: "Wazo", logo: "/images/partners/wazo.png" },
-  { name: "Ascom", logo: "/images/partners/ascom.png" },
-  { name: "Fortinet", logo: "/images/partners/fortinet.png" },
-  { name: "VMware", logo: "/images/partners/vmware-logo-grey.svg" },
-  { name: "Ruckus", logo: "/images/partners/ruckus.png" },
+  { name: "Mitel", logo: "/images/mitel.png" },
+  { name: "Wazo", logo: "/images/wazo.png" },
+  { name: "Ascom", logo: "/images/ascom.png" },
+  { name: "Fortinet", logo: "/images/fortinet.png" },
+  { name: "VMware", logo: "/images/vmware-logo-grey.svg" },
+  { name: "Ruckus", logo: "/images/ruckus.png" },
 ]
 
 export function PartnersSection() {
