@@ -57,7 +57,7 @@ function MarqueeRow({
             <img
               src={client.logo || "/placeholder.svg"}
               alt={client.name}
-              className="h-auto max-h-10 w-auto max-w-full object-contain opacity-60 transition-opacity duration-300 hover:opacity-100 grayscale hover:grayscale-0"
+              className="h-auto max-h-10 w-auto max-w-full object-contain opacity-70 transition-opacity duration-300 hover:opacity-100"
               loading="lazy"
             />
           </div>

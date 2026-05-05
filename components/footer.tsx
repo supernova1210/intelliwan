@@ -4,12 +4,8 @@ import { MapPin, Phone } from "lucide-react"
 
 const navLinks = [
   { label: "Accueil", href: "/" },
-  { label: "Solutions", href: "/solutions" },
   { label: "Formations", href: "/formations" },
-  { label: "Références", href: "/references" },
-  { label: "À propos", href: "/a-propos" },
   { label: "Contact", href: "/contact" },
-  { label: "Actualités", href: "/actualites" },
 ]
 
 export function Footer() {
@@ -74,7 +70,7 @@ export function Footer() {
       {/* Copyright */}
       <div className="px-6 py-6">
         <p className="text-center text-sm text-[#AFC3CF]">
-          © {new Date().getFullYear()} Intelliwan — Tous droits réservés
+          © {new Date().getFullYear()} Intelliwan. Tous droits réservés.
         </p>
       </div>
     </footer>
