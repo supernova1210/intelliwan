@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import { motion } from "framer-motion"
 
 const partners = [
@@ -65,13 +64,11 @@ export function PartnersSection() {
               transition={{ duration: 0.5, delay: i * 0.08 }}
               className="group flex flex-col items-center justify-center gap-3 rounded-2xl bg-white/80 backdrop-blur-sm border border-gray-100 p-6 hover:bg-white hover:shadow-lg hover:shadow-gray-200/50 hover:border-gray-200 hover:scale-105 transition-all duration-300 cursor-default"
             >
-              <div className="h-10 flex items-center justify-center">
-                <Image
+              <div className="h-14 flex items-center justify-center">
+                <img
                   src={partner.logo}
                   alt={partner.name}
-                  width={100}
-                  height={40}
-                  className="h-auto max-h-10 w-auto max-w-[90px] object-contain"
+                  className="h-auto max-h-14 w-auto max-w-[110px] object-contain"
                 />
               </div>
               <span className="text-xs text-gray-400 font-sans">{partner.name}</span>
