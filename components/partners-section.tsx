@@ -1,15 +1,15 @@
 "use client"
 
+import Image from "next/image"
 import { motion } from "framer-motion"
-import { Headphones, Server, Wifi, Lock, Cloud, Radio } from "lucide-react"
 
 const partners = [
-  { name: "Mitel", icon: Headphones, desc: "Téléphonie d'entreprise" },
-  { name: "Wazo", icon: Server, desc: "Communications unifiées" },
-  { name: "Ascom", icon: Radio, desc: "Mobilité hospitalière" },
-  { name: "Fortinet", icon: Lock, desc: "Sécurité réseau" },
-  { name: "VMware", icon: Cloud, desc: "Virtualisation" },
-  { name: "Ruckus", icon: Wifi, desc: "Wi-Fi entreprise" },
+  { name: "Mitel", logo: "/images/partners/mitel.png" },
+  { name: "Wazo", logo: "/images/partners/wazo.png" },
+  { name: "Ascom", logo: "/images/partners/ascom.png" },
+  { name: "Fortinet", logo: "/images/partners/fortinet.png" },
+  { name: "VMware", logo: "/images/partners/vmware-logo-grey.svg" },
+  { name: "Ruckus", logo: "/images/partners/ruckus.png" },
 ]
 
 export function PartnersSection() {
@@ -65,9 +65,16 @@ export function PartnersSection() {
               transition={{ duration: 0.5, delay: i * 0.08 }}
               className="group flex flex-col items-center justify-center gap-3 rounded-2xl bg-white/80 backdrop-blur-sm border border-gray-100 p-6 hover:bg-white hover:shadow-lg hover:shadow-gray-200/50 hover:border-gray-200 hover:scale-105 transition-all duration-300 cursor-default"
             >
-              <partner.icon className="w-7 h-7 text-[#004467]" strokeWidth={1.5} />
-              <span className="text-sm font-bold text-[#004467] font-sans">{partner.name}</span>
-              <span className="text-[11px] text-gray-400 text-center leading-tight font-sans">{partner.desc}</span>
+              <div className="h-10 flex items-center justify-center">
+                <Image
+                  src={partner.logo}
+                  alt={partner.name}
+                  width={100}
+                  height={40}
+                  className="h-auto max-h-10 w-auto max-w-[90px] object-contain"
+                />
+              </div>
+              <span className="text-xs text-gray-400 font-sans">{partner.name}</span>
             </motion.div>
           ))}
         </div>
