@@ -46,7 +46,7 @@ export async function POST(request: Request) {
     await resend.emails.send({
       from: 'Intelliwan <noreply@intelliwan.fr>',
       to: ['contact@intelliwan.fr', 'vincentchpt@gmail.com'],
-      reply_to: data.email,
+      replyTo: data.email,
       subject: `[Intelliwan] Nouveau contact : ${sujetLabels[data.sujet]}`,
       html: `
         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 24px; background: #f2f7fb;">
