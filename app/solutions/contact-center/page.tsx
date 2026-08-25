@@ -9,7 +9,7 @@ import { Footer } from "@/components/footer"
 export const metadata = {
   title: "Centre de contact & Expérience client | Intelliwan",
   description:
-    "Transformez chaque interaction en avantage concurrentiel grâce à une plateforme de centre de contact omnicanal intelligente. Solutions Mitel CX, MiContact Center Business, Workflow Studio.",
+    "Transformez chaque interaction en avantage concurrentiel grâce à une plateforme de centre de contact omnicanal intelligente. Solutions Mitel CX, MiContact Center Business, Workflow Studio et Kiamo.",
 }
 
 export default function ContactCenterPage() {

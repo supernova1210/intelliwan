@@ -66,8 +66,8 @@ export default function ContactPage() {
                     <Mail className="w-5 h-5 text-[#004467]" strokeWidth={1.5} />
                     <span className="text-[#44515A]">
                       <span className="font-semibold text-[#1C1C1C]">Email :</span>{" "}
-                      <a href="mailto:contact@intelliwan.com" className="hover:text-[#004467] transition-colors">
-                        contact@intelliwan.com
+                      <a href="mailto:contact@intelliwan.fr" className="hover:text-[#004467] transition-colors">
+                        contact@intelliwan.fr
                       </a>
                     </span>
                   </li>

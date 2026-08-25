@@ -37,6 +37,7 @@ const solutions = [
     phrase: "L'expérience client réinventée par l'intelligence artificielle.",
     icon: BrainCircuit,
     color: "#004467",
+    dashboard: "mitel.cx",
   },
   {
     id: "micontact",
@@ -55,6 +56,7 @@ const solutions = [
     phrase: "De quelques agents à des centaines, une solution qui s'adapte.",
     icon: Headphones,
     color: "#00a86b",
+    dashboard: "micontact.dashboard",
   },
   {
     id: "workflow-studio",
@@ -72,6 +74,7 @@ const solutions = [
     phrase: "Automatisez vos parcours client sans dépendance technique.",
     icon: Workflow,
     color: "#0891b2",
+    dashboard: "workflow.studio",
   },
   {
     id: "workforce",
@@ -89,6 +92,26 @@ const solutions = [
     phrase: "Optimisez la performance de chaque agent, de chaque interaction.",
     icon: BarChart3,
     color: "#e97316",
+    dashboard: "workforce.optimization",
+  },
+  {
+    id: "kiamo",
+    number: "05",
+    title: "Kiamo",
+    subtitle: "Centre de contact omnicanal souverain",
+    description:
+      "Solution omnicanale 100 % développée et hébergée en France, indépendante de l'opérateur et du PABX : un moteur unique capture, priorise et distribue chaque flux vers le bon conseiller, au bon moment.",
+    features: [
+      "Voix, e-mail, chat, SMS et réseaux sociaux",
+      "Moteur de distribution intelligent",
+      "800+ indicateurs de supervision natifs",
+      "Hébergement on-premise ou cloud, conforme RGPD",
+      "Connecteurs CRM, ERP et API natives",
+    ],
+    phrase: "Une solution souveraine, maîtrisée de bout en bout et interopérable avec l'existant.",
+    icon: MessageCircle,
+    color: "#7c3aed",
+    dashboard: "kiamo.dashboard",
   },
 ]
 
@@ -106,7 +129,7 @@ function SolutionVisual({ solution }: { solution: (typeof solutions)[0] }) {
           <span className="w-2.5 h-2.5 rounded-full bg-yellow-500/80" />
           <span className="w-2.5 h-2.5 rounded-full bg-green-500/80" />
         </div>
-        <span className="text-[11px] text-gray-500 font-mono ml-2">mitel.dashboard</span>
+        <span className="text-[11px] text-gray-500 font-mono ml-2">{solution.dashboard}</span>
       </div>
 
       {/* Body */}
@@ -252,7 +275,7 @@ export function ContactCenterSolutions() {
               <span className="text-[#004467]">déployons</span>
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed font-sans">
-              {"Selon vos besoins (volumes d'interactions, canaux prioritaires, workflows), nous recommandons les plateformes suivantes de l'écosystème Mitel."}
+              {"Selon vos besoins (volumes d'interactions, canaux prioritaires, workflows), nous recommandons les plateformes de l'écosystème Mitel ainsi que Kiamo, solution omnicanale souveraine."}
             </p>
           </motion.div>
 

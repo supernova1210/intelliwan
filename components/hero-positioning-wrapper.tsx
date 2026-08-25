@@ -163,8 +163,8 @@ export function HeroPositioningWrapper() {
                       />
                       <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent" />
                       <div className="flex items-center gap-2">
-                        <Award className="w-4 h-4 text-[#00a86b]" />
-                        <span className="text-[#00a86b] font-bold text-sm tracking-wide">Gold</span>
+                        <Award className="w-4 h-4 text-[#B8860B]" />
+                        <span className="text-[#B8860B] font-bold text-sm tracking-wide">Gold</span>
                       </div>
                     </div>
                   </div>

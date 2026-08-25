@@ -191,11 +191,11 @@ export function FormationsHero() {
           >
             <div className="flex items-center gap-3 rounded-full bg-white/70 backdrop-blur-sm border border-gray-200/80 px-5 py-3 shadow-sm">
               <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#E8FFF6]">
-                <Building2 className="h-4 w-4 text-[#004467]" strokeWidth={2} />
+                <Users className="h-4 w-4 text-[#004467]" strokeWidth={2} />
               </div>
               <div>
-                <span className="text-lg font-bold text-gray-900">9</span>
-                <span className="text-sm text-gray-500 ml-1.5">entreprises formées en 2024</span>
+                <span className="text-lg font-bold text-gray-900">4</span>
+                <span className="text-sm text-gray-500 ml-1.5">participants formés en 2025</span>
               </div>
             </div>
             <div className="flex items-center gap-3 rounded-full bg-white/70 backdrop-blur-sm border border-gray-200/80 px-5 py-3 shadow-sm">
