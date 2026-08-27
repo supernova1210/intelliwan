@@ -2,6 +2,7 @@ import { ContactCenterHero } from "@/components/contact-center-hero"
 import { ContactCenterEnjeux } from "@/components/contact-center-enjeux"
 import { ContactCenterArchitecture } from "@/components/contact-center-architecture"
 import { ContactCenterSolutions } from "@/components/contact-center-solutions"
+import { ContactCenterKiamo } from "@/components/contact-center-kiamo"
 import { ContactCenterBenefices } from "@/components/contact-center-benefices"
 import { ContactCenterCta } from "@/components/contact-center-cta"
 import { Footer } from "@/components/footer"
@@ -20,6 +21,7 @@ export default function ContactCenterPage() {
         <ContactCenterEnjeux />
         <ContactCenterArchitecture />
         <ContactCenterSolutions />
+        <ContactCenterKiamo />
         <ContactCenterBenefices />
         <ContactCenterCta />
       </main>

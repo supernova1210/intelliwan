@@ -38,6 +38,7 @@ const solutions = [
     icon: BrainCircuit,
     color: "#004467",
     dashboard: "mitel.cx",
+    href: "/contact",
   },
   {
     id: "micontact",
@@ -57,6 +58,7 @@ const solutions = [
     icon: Headphones,
     color: "#00a86b",
     dashboard: "micontact.dashboard",
+    href: "/contact",
   },
   {
     id: "workflow-studio",
@@ -75,6 +77,7 @@ const solutions = [
     icon: Workflow,
     color: "#0891b2",
     dashboard: "workflow.studio",
+    href: "/contact",
   },
   {
     id: "workforce",
@@ -91,8 +94,9 @@ const solutions = [
     ],
     phrase: "Optimisez la performance de chaque agent, de chaque interaction.",
     icon: BarChart3,
-    color: "#e97316",
+    color: "#7c3aed",
     dashboard: "workforce.optimization",
+    href: "/contact",
   },
   {
     id: "kiamo",
@@ -110,8 +114,9 @@ const solutions = [
     ],
     phrase: "Une solution souveraine, maîtrisée de bout en bout et interopérable avec l'existant.",
     icon: MessageCircle,
-    color: "#7c3aed",
+    color: "#F2611A",
     dashboard: "kiamo.dashboard",
+    href: "#kiamo",
   },
 ]
 
@@ -387,7 +392,7 @@ export function ContactCenterSolutions() {
                         </p>
 
                         <Link
-                          href="/contact"
+                          href={sol.href}
                           className="inline-flex items-center gap-2 text-[#004467] font-semibold text-sm hover:gap-3 transition-all w-fit font-sans"
                         >
                           En savoir plus
