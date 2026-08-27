@@ -393,27 +393,8 @@ export function ContactCenterKiamo() {
           className="pointer-events-none absolute -left-32 top-0 h-[420px] w-[420px] rounded-full opacity-20 blur-[130px]"
           style={{ backgroundColor: ORANGE }}
         />
-        <div className="relative z-10 mx-auto grid max-w-[1400px] items-center gap-12 px-6 py-20 lg:grid-cols-2 lg:px-8 lg:py-28">
+        <div className="relative z-10 mx-auto grid max-w-[1400px] gap-12 px-6 py-20 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 lg:px-8 lg:py-28">
           <motion.div
-            className="order-2 lg:order-1"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.75 }}
-          >
-            <div className="overflow-hidden rounded-2xl border border-white/15 bg-white shadow-2xl">
-              <Image
-                src="/images/kiamo-supervision.webp"
-                alt="Supervision Kiamo : indicateurs temps réel et suivi de l'activité des conseillers"
-                width={1060}
-                height={950}
-                className="h-auto w-full"
-              />
-            </div>
-          </motion.div>
-
-          <motion.div
-            className="order-1 lg:order-2"
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
@@ -428,32 +409,32 @@ export function ContactCenterKiamo() {
             <h3 className="font-sans text-2xl font-bold tracking-tight text-white md:text-3xl lg:text-4xl">
               {"Piloter l'activité pendant qu'elle se déroule"}
             </h3>
-            <p className="mt-6 font-sans text-base leading-relaxed text-white/55 lg:text-lg">
+            <p className="mt-6 max-w-md font-sans text-base leading-relaxed text-white/55 lg:text-lg">
               {
                 "Le superviseur voit l'état des files, la charge des équipes et la tenue des engagements de service, et agit sans attendre le rapport du lendemain."
               }
             </p>
-
-            <div className="mt-9 grid gap-px overflow-hidden rounded-2xl bg-white/10 sm:grid-cols-2">
-              {supervision.map((s, i) => {
-                const Icon = s.icon
-                return (
-                  <motion.div
-                    key={s.label}
-                    className="p-5 transition-colors duration-500 hover:bg-white/[0.06]"
-                    style={{ backgroundColor: PETROL }}
-                    initial={{ opacity: 0, y: 16 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.45, delay: i * 0.08 }}
-                  >
-                    <Icon className="mb-3 h-5 w-5" style={{ color: ORANGE }} />
-                    <p className="font-sans text-sm leading-relaxed text-white/60">{s.label}</p>
-                  </motion.div>
-                )
-              })}
-            </div>
           </motion.div>
+
+          <div className="grid gap-px overflow-hidden rounded-2xl bg-white/10 sm:grid-cols-2">
+            {supervision.map((s, i) => {
+              const Icon = s.icon
+              return (
+                <motion.div
+                  key={s.label}
+                  className="p-7 transition-colors duration-500 hover:bg-white/[0.06]"
+                  style={{ backgroundColor: PETROL }}
+                  initial={{ opacity: 0, y: 16 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.45, delay: i * 0.08 }}
+                >
+                  <Icon className="mb-4 h-5 w-5" style={{ color: ORANGE }} />
+                  <p className="font-sans text-[15px] leading-relaxed text-white/60">{s.label}</p>
+                </motion.div>
+              )
+            })}
+          </div>
         </div>
       </div>
 

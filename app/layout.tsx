@@ -21,8 +21,13 @@ export const metadata: Metadata = {
   description:
     "Téléphonie, internet, réseaux, sécurité, mobilité et formations certifiées Qualiopi pour accompagner vos équipes.",
   icons: {
-    icon: "/img/intelliwan-operateur-telephonie-reseau-wifi-lyon-favicon.png",
-    apple: "/img/intelliwan-operateur-telephonie-reseau-wifi-lyon-favicon.png",
+    icon: [
+      { url: "/images/favicon-intelliwan-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/images/favicon-intelliwan-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/images/favicon-intelliwan-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    shortcut: "/images/favicon-intelliwan-32.png",
+    apple: "/images/apple-touch-icon-intelliwan.png",
   },
 }
 
