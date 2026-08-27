@@ -104,12 +104,12 @@ const solutions = [
     title: "Kiamo",
     subtitle: "Centre de contact omnicanal souverain",
     description:
-      "Solution omnicanale 100 % développée et hébergée en France, indépendante de l'opérateur et du PABX : un moteur unique capture, priorise et distribue chaque flux vers le bon conseiller, au bon moment.",
+      "Un moteur unique qui capture, priorise et distribue appels, e-mails, chat, SMS et messages sociaux vers le bon conseiller, en se branchant sur votre téléphonie existante.",
     features: [
       "Voix, e-mail, chat, SMS et réseaux sociaux",
       "Moteur de distribution intelligent",
       "800+ indicateurs de supervision natifs",
-      "Hébergement on-premise ou cloud, conforme RGPD",
+      "On-premise ou cloud, conforme RGPD",
       "Connecteurs CRM, ERP et API natives",
     ],
     phrase: "Une solution souveraine, maîtrisée de bout en bout et interopérable avec l'existant.",
